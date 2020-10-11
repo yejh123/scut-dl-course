@@ -23,7 +23,7 @@
  - 常见的学习器 (optimizer)：Adam、RMSProp
  - Feedforward Network (hw1)
  - Convolution Neural Network（hw2）: Conv2d、MaxPooling
- - recurrent Neural Network (hw3)
+ - Recurrent Neural Network (hw3)
  - AutoEncoder (hw?)
  - Generative Adversarial Network (hw?)
  
@@ -31,13 +31,14 @@
 如果有不清楚的地方，请自行Google（需科学上网）/知乎（推荐）/Baidu（不建议），或者与我或者助教交流。
 
 
-### 全连接神经网络 (DNN)
+## 全连接神经网络 (DNN)
 
 
-### Back Propogation算法
+## Back Propogation算法
+深入理解δ学习规则，见PPT
 
 
-### 卷积神经网络 (CNN)
+## 卷积神经网络 (CNN)
 为什么CNN在处理图像问题上这么强大，因为CNN利用了许多图片的相关特性。图片的特性有：
  
  
@@ -47,11 +48,13 @@
 | 平移不变性 | 对于物体的识别不依赖于它在图像中的位置 | 是MaxPool的前提假设 |
 | 构成性 | 被识别目标是由各个部分构成的 | 随着层数的加深，一个Filter提取的图像范围加大 |
 
-#### Conv2d
+### Conv2d
+构成CNN的模块之一
 
-#### MaxPool2d
+### MaxPool2d
+构成CNN的模块之二
 
-#### 扩展：如何使得CNN更强大
+### 扩展：如何使得CNN更强大
  - 修改模型架构：又深又宽，招人喜欢（误），一般来说，模型深>模型宽（详见相关论文），前提是你跑的起来，而且具有避免梯度消失/梯度爆炸的方法（Residual Network）
  - 激活函数：改用Relu激活函数防止梯度消失
  - 正则化
@@ -62,15 +65,16 @@
  - 终极大招，又称站在巨人的肩膀上之法：Fine-tune，直接调用AlexNet、VGGNet、ResNet、Inception等已经pre-trained好的模型进行调整
 
 
-### 循环神经网络 (RNN)
+## 循环神经网络 (RNN)
 
-#### BPTT算法
+### BPTT算法
 
-#### LSTM
+### LSTM
 
-#### GRU
+### GRU
 
-#### Transformer
+
+## Transformer
 大人，时代变了！
 
 
