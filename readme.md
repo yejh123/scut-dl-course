@@ -68,16 +68,37 @@
 
 ## 循环神经网络 (RNN)
 
+RNNs因为具有**记忆**功能，所以主要用于处理序列化数据，例如自然语言、视频、语音等数据，是深度学习中最常用的模型之一。
+
 ### BPTT算法
 
-### LSTM
+## LSTM
+![LSTM公式](https://github.com/yejh123/scut-dl-course/blob/main/RNN/LSTM.png)
 
-### GRU
+![双向LSTM示意图](https://github.com/yejh123/scut-dl-course/blob/main/RNN/double%20LSTM.jpg)
 
+## GRU
+![GRU公式](https://github.com/yejh123/scut-dl-course/blob/main/RNN/GRU.png)
+
+## Seq2Seq 
+序列化到序列化模型，即输入一段序列化数据，输出另一端序列化数据，是深度学习的一大研究方向，广泛应用于NLP等领域。
+
+ - [yejh123/Seq2Seq-Translation-GRU-Attention](https://github.com/yejh123/Seq2Seq-Translation-GRU-Attention/tree/main)
 
 ## Transformer
-大人，时代变了！
+Transformer是对传统RNNs模型的一大改进，模型应用了符合人类认知直觉的**Attention**机制。
 
+Transformer的出现（2017年），使得NLP领域近年来突飞猛进，出现了许多著名且强大的语言模型，包括BERT、GPT-2、GPT-3等。
+
+ - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) 
+ - [直觀理解GPT-2 語言模型並生成金庸武俠小說 - LeeMeng](https://leemeng.tw/gpt2-language-model-generate-chinese-jing-yong-novels.html)
+ - [yejh/Transformer](https://github.com/yejh123/Transformer)
+ 
+## Auto-Encoder
+ - 普通Auto-Encoder
+ - 正则Auto-Encoder
+   - 稀疏Auto-Encoder：L1正则化
+   - 噪声Auto-Encoder
 
 
 ## hw1
@@ -87,7 +108,6 @@ numpy基本操作
 
 ### hw1-2
 一维线性回归
-
 
 ### hw1-3
 多项式线性回归
